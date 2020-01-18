@@ -69,8 +69,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 		else {
 			System.out.println("table does not exists");
 		}
-		pStatement=connection.prepareStatement("select uid,first_name,"
-				+ "last_name,email from"
+		pStatement=connection.prepareStatement("select uid,firstname,"
+				+ "lastname,email from"
 				+ " customer");
 		
 		ResultSet rSet=pStatement.executeQuery();
