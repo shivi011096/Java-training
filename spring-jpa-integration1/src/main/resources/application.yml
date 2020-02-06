@@ -1,10 +1,9 @@
 spring:
   application:
     name: spring-jpa
-  h2:
-    console:
-      enabled: true
-      path: /console
-      settings:
-        web-allow-others: true
-        trace: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/hr
+    username: root
+    password: welcome
+    
+ 
