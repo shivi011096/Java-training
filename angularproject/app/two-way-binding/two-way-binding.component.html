@@ -1,0 +1,7 @@
+<p>tempalte reference variable</p>
+<input type="text" #myInput/>
+<button (click)="onButtonClick(myInput.value)">Button</button>
+
+<p>two way data binding</p>
+<h1>{{name}}</h1>
+<input type="text" [(ngModel)]="name" />

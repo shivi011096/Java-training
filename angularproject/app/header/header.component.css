@@ -1,0 +1,15 @@
+.text-success{
+    color: green;
+}
+
+.text-danger{
+    color: red;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-special{
+    font-style: italic;
+}

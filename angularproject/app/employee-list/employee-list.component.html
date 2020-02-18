@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="center">Employee List Table</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <th>Email</th>
+                <th>DOB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let employee of name">
+               <td>{{ employee.empId }}</td>
+               <td>{{ employee.empName }}</td>
+               <td>{{ employee.gender}}</td>
+               <td>{{employee.salary | currency : 'INR'}}</td>
+               <td>{{ employee.email }}</td>
+               <td>{{ employee.dob | date : 'shortDate'}}</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    </div>
